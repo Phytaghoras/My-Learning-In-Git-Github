@@ -1,1 +1,6 @@
+It my Repositoty about Github 
 
+Configuration:
+1. Configurate username n user email
+   -> git config --global user.name "[yourname]"
+   -> git config --global user.email "[your email]" 
