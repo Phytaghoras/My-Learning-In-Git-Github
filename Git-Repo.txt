@@ -14,7 +14,7 @@ Configuration:
 - if you use the vscode
    -> git config --global core.editor "code --wait"
    -> git config --global diff.tool "default-difftool"
-   -> git config --global difftool.default-difftool.cmd "code --wait --diff \$LOCAL \$REMOTE
+   -> git config --global difftool.default-difftool.cmd "code --wait --diff \$LOCAL \$REMOTE"
 
 - Seiing all of Configuration
    -> git config --list --show-origin
@@ -27,10 +27,71 @@ Configuration:
 
 - add to Commit
    -> git add [namefile]
+   -> git add . (all file)
 
 - Commit file
    -> git commit -m "[information]"
 
 - View the change from a commit
-   -> git diff
+   -> git diff    
+   
+- discard change in working directory
+   -> git restore [name file]
+   -> git clean -f (all file)
+
+- unstage file
+   -> git restore --staged [name file] 
+
+--------------- Commit LOG ---------------
+
+- see history commit
+   -> git log 
+
+- see a simple history commit
+   -> git log --oneline
+
+- see algortithm from commit  
+   -> git log --oneline --graph
+
+- see detail commit
+   -> git show 
+
+
+--------------- Compare Commit ---------------
+-- see compare commit
+   -> git diff [hash1] [hash2]
+
+-- see compare commit in app (vscode etc.)
+   -> git difftool [hash1] [hash2]
+
+--------------- Rename File ---------------
+-  what if the file is changed?
+   -> git add [before file] -> git add [new renamed file]
+
+
+--------------- Reset Commit ---------------
+- How to reset commit ?
+   -> git reset --[mode] [hash]
+                 mode --> soft or mixed or hard
+
+
+--------------- Ammend Commit ---------------
+-  if you forget something, you can redo without adding new commits
+   -> git commit --amend -m "[information]"
+
+--------------- Checkout ---------------
+
+   -> git checkout [hash] --[namefile]
+         note : if you want to restore then type:
+            ->  git restore --staged [namefile]
+            ->  git restore [namefile]
+
+   -> git checkout [namebranch] or git checkout [hash]
+      note : this if you want to change the snapshot
+
+--------------- Git Branch ---------------
+- Show Branch
+   -> git branch
+
+
 
