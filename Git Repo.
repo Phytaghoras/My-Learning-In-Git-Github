@@ -1,5 +1,10 @@
 It my Repositoty about Github 
 
+   git memiliki tiga stage :
+      -> Modified
+      -> Staged
+      -> Commited
+
 Configuration:
 1. Configurate username n user email
    -> git config --global user.name "[yourname]"
