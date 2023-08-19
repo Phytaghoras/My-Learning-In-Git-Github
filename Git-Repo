@@ -25,5 +25,7 @@ Configuration:
 - check a Repositoty
    -> git status
 
-- 
- 
+- add to Commit
+   -> git add [namefile]
+
+-
