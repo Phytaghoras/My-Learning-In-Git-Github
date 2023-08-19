@@ -16,4 +16,14 @@ Configuration:
    -> git config --global diff.tool "default-difftool"
    -> git config --global difftool.default-difftool.cmd "code --wait --diff \$LOCAL \$REMOTE
 
+- Seiing all of Configuration
+   -> git config --list --show-origin
+
+- make a Repositoty
+   -> git init
+
+- check a Repositoty
+   -> git status
+
+- 
  
