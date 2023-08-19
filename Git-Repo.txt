@@ -28,4 +28,9 @@ Configuration:
 - add to Commit
    -> git add [namefile]
 
--
+- Commit file
+   -> git commit -m "[information]"
+
+- View the change from a commit
+   -> git diff
+
